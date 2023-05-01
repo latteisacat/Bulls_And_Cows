@@ -1,6 +1,7 @@
 def cow(randomNum, inputNum):
     count = 0
-    for num in inputNum:
-        if num in randomNum:
-            count += 1
+    for i in range(4):
+        if inputNum[i] in randomNum:
+            if inputNum[i] != randomNum[i]:
+                count += 1
     return count
